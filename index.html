@@ -10,76 +10,25 @@
   minimum-scale=1.0, maximum-scale=1.0">
 <link rel="shortcut icon" href="favicon.png" sizes="32x32">
 <link rel="stylesheet" href="estilos.css">
-
 </head>
-
- <style>
-  *{ 
-margin: 0px;
-padding: 0px;
-}
-
-#navbar ul {
-list-style: none;
-background-color: #790f32;
-margin: 0;
-padding: 0;
-}
-
-#navbar ul li {
-display: inline-block;
-}
-
-#navbar ul li a {
-color: rgb(255, 146, 146);
-display: block;
-padding: 10px;
-text-decoration: none;
-}
-
-#navbar ul li a:hover {
-background-color: #790f32;
-}
-
-
-.navbar¨{position: fixed;
-  top: 0;
-}
-
-.content {
-  padding: 10px;
-}
-
-.sticky {
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  width: 100%;
-}
-
-.sticky + .content {
-  padding-top: 60px;
-}
-
-</style>
 
 <body>
 
-  <!-- MENU falta añadir link en el logo de la camara <a href="">--> 
+  <!-- MENU --> 
   
 <div id="navbar">
   <a class="active"></a>
 <ul>
-  <li> <a href="#"></a> <img src="camara.png" alt="logo" width="50px" height="40px"></li>
+  <li> <a href="#"><img src="camara.png" alt="logo" width="50px" height="40px"></a> </li>
 <li> <a href="#">PORTFOLIO</a></li>
 <li> <a href="#">PRENSA</a> </li>
 <li> <a href="#">SOBRE MÍ</a> </li>
-<li class="iz"> <a href="#">CONTACTO</a></li>
+<li class="iz"> <a href="contacto.html">CONTACTO</a></li>
 </ul>
 </div>
 <div class="header"></div>
 
-<!-- carousel -->
+<!-- carousel (si cambiamos el 44 por -300px subimos el carousel hacia arriba viendo menos foto)-->
 <div style="margin-top: 44px" id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -88,24 +37,23 @@ background-color: #790f32;
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="una.jpg" class="d-block w-100" alt="chica">
+      <img src="Jes_1.jpg" class="d-block w-100" alt="zapatos">
       <div class="carousel-caption d-none d-md-block">
-        <h5>First slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
+        <h5 class="texto">Los preparativos de ella</h5>
+        <p class="texto">¡Ya ha llegado el gran día!</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="dos.jpg" class="d-block w-100" alt="ojos chica">
+      <img src="Jes_2.jpg" class="d-block w-100" alt="novia sentada">
       <div class="carousel-caption d-none d-md-block">
-        <h5>Second slide label</h5>
-        <p>Some representative placeholder content for the second slide.</p>
+        <h5 class="texto">¿Preparados?</h5>
+        <p class="texto">Se acerca el momento de la fiesta</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="tres.jpg" class="d-block w-100" alt="espacio de trabajo">
+      <img src="Jes_3.jpg" class="d-block w-100" alt="novia en el salón de la boda">
       <div class="carousel-caption d-none d-md-block">
-        <h5>Third slide label</h5>
-        <p>Some representative placeholder content for the third slide.</p>
+        <h5 class="texto">Ella </h5>
       </div>
     </div>
   </div>
@@ -123,31 +71,24 @@ background-color: #790f32;
 <!-- footer -->
 <article>
   <center>
-    <h1>Ejemplo para nuestro proyecto web</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam interdum tortor sed sagittis tempor. Quisque fringilla velit mauris, ac varius libero finibus eu. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur ultrices mi a felis luctus, ut vulputate nisl condimentum. Praesent suscipit est purus, in scelerisque nisi mattis sit amet. Phasellus dapibus, quam ut tempor scelerisque, est eros placerat sapien, vitae blandit nulla purus quis metus. Proin consectetur faucibus arcu. Morbi maximus, mauris non volutpat tempus, purus urna maximus metus, nec molestie erat sapien at lectus. Pellentesque risus urna, mattis facilisis erat id, mollis aliquet orci. Nulla eget ipsum sit amet dolor pellentesque placerat. Aenean tempor nibh vitae mauris cursus interdum. 
+    <h1 class="texto">Ejemplo para nuestro proyecto web</h1>
+    <p class="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam interdum tortor sed sagittis tempor. Quisque fringilla velit mauris, ac varius libero finibus eu. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur ultrices mi a felis luctus, ut vulputate nisl condimentum. Praesent suscipit est purus, in scelerisque nisi mattis sit amet. Phasellus dapibus, quam ut tempor scelerisque, est eros placerat sapien, vitae blandit nulla purus quis metus. Proin consectetur faucibus arcu. Morbi maximus, mauris non volutpat tempus, purus urna maximus metus, nec molestie erat sapien at lectus. Pellentesque risus urna, mattis facilisis erat id, mollis aliquet orci. Nulla eget ipsum sit amet dolor pellentesque placerat. Aenean tempor nibh vitae mauris cursus interdum. 
   Aliquam congue justo tempus, semper nulla sed, condimentum ipsum.
 Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque faucibus dolor lectus, eu mattis nisl rutrum vel. Nulla non consectetur elit. Sed viverra, velit vel efficitur sodales, orci nisi pulvinar urna, sit amet porttitor tellus massa in leo. Maecenas massa nunc, cursus ac dui sed, sagittis vestibulum mauris. Pellentesque porta aliquam magna vitae consectetur. Fusce convallis, ipsum vel tincidunt tempor, mi justo aliquet ipsum, eget efficitur elit odio id leo.
 
-<h2>Segundo titulo</h2>
+<h2 class="texto">Segundo titulo</h2>
 
 Maecenas lobortis sagittis massa, quis tincidunt purus dapibus in. Proin et lacinia libero. Cras convallis ullamcorper urna, sed dapibus dui imperdiet ut. Pellentesque sodales, augue vel tincidunt aliquam, neque odio aliquet quam, feugiat tempus lorem orci sit amet quam. Nullam eu posuere magna, eget varius massa. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nullam ut nisl non tortor eleifend condimentum non et tellus. Quisque fermentum pulvinar lacus id accumsan. Nam a faucibus leo. Nulla facilisi. Vivamus porttitor quam in felis dapibus, in porttitor felis volutpat. Aenean dictum turpis et ex lobortis malesuada. Duis lobortis consectetur magna. Morbi feugiat ipsum et risus elementum, id auctor neque congue. Aliquam sit amet lorem mauris. Maecenas laoreet arcu quis faucibus ullamcorper.
 
-<h3>Tercer titulo</h3>
+<h3 class="texto">Tercer titulo</h3>
 
 Nullam sodales, metus a imperdiet suscipit, tellus felis pharetra tortor, eu iaculis magna nunc et eros. Nunc tempus blandit luctus. Cras pretium consectetur risus. Suspendisse egestas nec ex quis rutrum. Sed a justo porta, lobortis odio nec, vehicula nibh. Nullam accumsan sem eget congue aliquam. Aliquam convallis mattis ultrices.
 
 </p>
 <br><br>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et felis neque. Nunc non lectus iaculis, tempor nulla eget, euismod elit. 
+<p class="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et felis neque. Nunc non lectus iaculis, tempor nulla eget, euismod elit. 
 Curabitur maximus bibendum mauris quis faucibus. Fusce eu nulla lacus. Sed augue leo, suscipit at tortor semper, volutpat sodales mauris. 
 Aliquam tincidunt dui eget ante mollis, quis congue justo interdum. Morbi non est at justo tempus accumsan. Vestibulum varius sollicitudin magna, a pulvinar massa laoreet quis. Praesent id purus tempor lectus mattis varius. Donec in mi eleifend, tincidunt dui non, suscipit sem. Vivamus ut metus urna. Ut efficitur at nisi ut hendrerit. Suspendisse posuere luctus eros, facilisis porta risus.
-</p>
-<br><br>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam interdum tortor sed sagittis tempor. Quisque fringilla velit mauris, ac varius libero finibus eu. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur ultrices mi a felis luctus, ut vulputate nisl condimentum. Praesent suscipit est purus, in scelerisque nisi mattis sit amet. Phasellus dapibus, quam ut tempor scelerisque, est eros placerat sapien, vitae blandit nulla purus quis metus. Proin consectetur faucibus arcu. Morbi maximus, mauris non volutpat tempus, purus urna maximus metus, nec molestie erat sapien at lectus. Pellentesque risus urna, mattis facilisis erat id, mollis aliquet orci. Nulla eget ipsum sit amet dolor pellentesque placerat. Aenean tempor nibh vitae mauris cursus interdum. 
-  Aliquam congue justo tempus, semper nulla sed, condimentum ipsum.
-Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque faucibus dolor lectus, eu mattis nisl rutrum vel. Nulla non consectetur elit. Sed viverra, velit vel efficitur sodales, orci nisi pulvinar urna, sit amet porttitor tellus massa in leo. Maecenas massa nunc, cursus ac dui sed, sagittis vestibulum mauris. Pellentesque porta aliquam magna vitae consectetur. Fusce convallis, ipsum vel tincidunt tempor, mi justo aliquet ipsum, eget efficitur elit odio id leo.
-
-Maecenas lobortis sagittis massa, quis tincidunt purus dapibus in. Proin et lacinia libero. Cras convallis ullamcorper urna, sed dapibus dui imperdiet ut. Pellentesque sodales, augue vel tincidunt aliquam, neque odio aliquet quam, feugiat tempus lorem orci sit amet quam. Nullam eu posuere magna, eget varius massa. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nullam ut nisl non tortor eleifend condimentum non et tellus. Quisque fermentum pulvinar lacus id accumsan. Nam a faucibus leo. Nulla facilisi. Vivamus porttitor quam in felis dapibus, in porttitor felis volutpat. Aenean dictum turpis et ex lobortis malesuada. Duis lobortis consectetur magna. Morbi feugiat ipsum et risus elementum, id auctor neque congue. Aliquam sit amet lorem mauris.
 </p>
 
 <!-- video y mapa -->
@@ -155,8 +96,7 @@ Maecenas lobortis sagittis massa, quis tincidunt purus dapibus in. Proin et laci
 
     <iframe width="560" height="315" src="https://www.youtube.com/embed/ZMO_XC9w7Lw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-    <h2><p class= "estilo1"> Ubicación de la clase</h2>
-
+    <h2><p class="texto"> Ubicación de la clase</h2>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.706367399351!2d-3.6265093000000097!3d40.43750040000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422f0b64a30ff3%3A0xba4f38efaa170197!2sC.%20de%20Rufino%20Gonz%C3%A1lez%2C%2040%2C%2028037%20Madrid!5e0!3m2!1ses!2ses!4v1654868987089!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     
       <img src="monte.jpg" class="borde" style="width:500px;height:300px;margin-top: -450px;">
@@ -217,7 +157,7 @@ Maecenas lobortis sagittis massa, quis tincidunt purus dapibus in. Proin et laci
        </div>  
          <div class="row2">
            <img src="Footer/email.jpeg"> 
-             <label>colegio@gmail.com</label>
+             <label>arellanosebastian7@gmail.com</label>
        </div>  
      
      </div>  
@@ -227,7 +167,7 @@ Maecenas lobortis sagittis massa, quis tincidunt purus dapibus in. Proin et laci
  <div class="container-footer">
    <div class="footer">
            <div class="copyright">
-            Copyright ©2022 Todos los derechos reservados | <a href="salmantino.com">salmantino.com</a>
+            Copyright ©2022 Todos los derechos reservados | <a href="salmantino.com">Jesicalcfotografia</a>
         </div>
         <div class="information">
           <a href="">Política de Privacidad</a>|

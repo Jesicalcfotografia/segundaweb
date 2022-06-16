@@ -1,3 +1,50 @@
+{ 
+margin: 0px;
+padding: 0px;
+}
+
+#navbar ul {
+list-style: none;
+background-color: #790f32;
+margin: 0;
+padding: 0;
+}
+
+#navbar ul li {
+display: inline-block;
+}
+
+#navbar ul li a {
+color: rgb(255, 146, 146);
+display: block;
+padding: 10px;
+text-decoration: none;
+}
+
+#navbar ul li a:hover {
+background-color: #790f32;
+}
+
+
+.navbar¨{position: fixed;
+top: 0;
+}
+
+.content {
+padding: 10px;
+}
+
+.sticky {
+position: fixed;
+z-index: 1;
+top: 0;
+width: 100%;
+}
+
+.sticky + .content {
+padding-top: 60px;
+}
+
 .borde{
 border: 1px solid #ddd;
   border-radius: 4px;
@@ -25,6 +72,16 @@ border: 1px solid #ddd;
 .sepia {filter: sepia(100%);}
 .shadow {filter: drop-shadow(8px 8px 10px rgb(0, 0, 0));}
 
+.texto{ color: rgb(59, 4, 4);
+	font-family: sans-serif;
+} 
+
+.image-fondo {
+    background-image: url(Jes.jpg);
+    background-size: cover;
+	width: 1200px;
+	height: 750px;
+}
 
 #menu {
 background-color: #000;
@@ -49,7 +106,7 @@ display: inline-block;
 #menu ul li a {
 color: white;
 display: block;
-padding: 10px;
+padding: 0px;
 text-decoration: none;
 }
 
@@ -58,7 +115,8 @@ background-color: #491f15;
 }
 
 .iz{
-	float: right
+	float: right;
+	margin: 10px
 }
 
 
@@ -166,6 +224,7 @@ background-color: #491f15;
 		color: white;
 		font-weigth: bold; /* letra mas gruesa */
 	}
+
 	.information{
 		text-decoration: none;
 		color: #C7C7C7;
@@ -175,6 +234,7 @@ background-color: #491f15;
 		text-decoration: none;
 		color: #C7C7C7;
 	}
+
 	/* responsive */
 	@media screen and (max-width: 1100px){
 		.container-body{
