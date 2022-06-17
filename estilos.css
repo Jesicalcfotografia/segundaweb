@@ -105,6 +105,7 @@ border: 0,5px solid #ddd;
 .texto{ color: rgb(59, 4, 4);
 	font-family: sans-serif;
 	border-radius: 5px;
+	padding: 15px;
 } 
 
 .image-fondo {
