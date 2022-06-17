@@ -110,8 +110,7 @@ border: 0,5px solid #ddd;
 .image-fondo {
     background-image: url(Jes.jpg);
     background-size: cover;
-	width: 1200px;
-	height: 750px;
+
 }
 
 #menu {
