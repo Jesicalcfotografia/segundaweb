@@ -109,9 +109,9 @@ border: 0,5px solid #ddd;
 } 
 
 .image-fondo {
-    background-image: url(Jes.jpg);
+    background-image: url(Jes.jpg) ;
     background-size: cover;
-
+    background-image opacity: 50%;
 }
 
 #menu {

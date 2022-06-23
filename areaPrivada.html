@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área privada JesicalcFotografia</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body class=image-fondo>
+   
+    <div id="navbar">
+        <a class="active"></a>
+      <ul>
+        <li> <a href="index.html"><img src="camara.png" alt="logo" width="50px" height="40px"></a> </li>
+      <li> <a href="#">PORTFOLIO</a></li>
+      <li> <a href="#">PRENSA</a> </li>
+      <li> <a href="#">SOBRE MÍ</a> </li>
+      <li class="iz"> <a href="areaPrivada.html">ÁREA PRIVADA</a> </li>
+      <li class="iz"> <a href="contacto.html">CONTACTO</a></li>
+      </ul>
+      </div>
+      <div class="header"></div>
+
+    <centre><h1 class="texto">Bienvenido a tu área privada como cliente.</h1></centre>
+<h3 class="texto">Sí has recibido un mail con el aviso de entrega del reportaje, <br>intruduce el usuario y contraseña.</h2>
+
+    <form action="">
+        <label  class="texto" for="">Nombre de usuario</label>
+        <input type="texto" id="usuario">
+        <br><label class="texto" for="">Contraseña</label>
+        <input type="password" id="contraseña">
+        <input type="button" value="Entrar" onclick="iniciarSesion()">
+            </form>
+            
+  
+   <script>
+
+function iniciarSesion(){
+    var usuario=document.getElementById("usuario").value;
+    var contraseña = document.getElementById("contraseña").value;
+
+    if(usuario == "bodaMapi" && contraseña == "1234"){;
+    alert("Ya estas dentro, ¡a disfrutar!");
+    }else{
+    alert("Contraseña incorrecta, vuelve a intentarlo");
+    }
+}
+
+
+    </script>
+</body>
+</html>
