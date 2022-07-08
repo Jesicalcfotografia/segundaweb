@@ -37,17 +37,46 @@
 .texto{
     font-family: 'Champagne & Limousines';
     font-weight: 700;   
-    font-size: 18px;
-    color: rgb(31, 31, 31);
+    font-size: 19px;
+    color: rgb(44, 44, 44);
 }
 
-.textoContacto{
-margin: 200px;
+.text {
+    font-family: 'Champagne & Limousines';
+    color: rgb(230, 230, 230);
+    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+ }
+ 
+ .textHover{
+    text-decoration: none !important;
+    color: rgb(51, 51, 51);
+ }
+
+ .textoFooter{
+    color: rgb(51, 51, 51); 
+    font-family: 'Champagne & Limousines'; 
+    font-weight: bold;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+}
+
+
+.textoContacto{ 
+margin: 230px;
 text-align: center;
     font-family: 'Champagne & Limousines';
     font-weight: 700;   
-    font-size: 18px;
-    color: rgb(51, 51, 51);
+    font-size: 18px; 
+    color: rgb(51, 51, 51); 
 }
 
 .contenedor{
@@ -59,12 +88,42 @@ text-align: center;
         background-size: cover;
         background-repeat: no-repeat;
         min-height: 800px;
+        
     }
     .volver{
-        bottom: 70px;
-        right: 120px;
+        bottom: 80px;
+        right: 220px;
         position: fixed;
 }
+
+
+.galerianovios{
+    background: url(Fotos/foto1b.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-height: 800px;
+
+}
+
+.novios{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Champagne & Limousines';
+    font-weight: 700;
+    height: 450px;
+    font-size: 38px;
+    color: rgb(211, 211, 211);
+    text-shadow: 1px 1px 5px rgb(51, 51, 51);
+    padding-top: 100px;
+}
+
+
+div a i{
+    font-size: 45px;
+    color: rgb(44, 44, 44);
+}
+
 
 .contenedorFotos{
 display: grid;
@@ -144,18 +203,6 @@ grid-template-areas:
     opacity: 1;
   }
 
-.text {
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
- }
-
 
 .contenedorFotos .foto1{
     /* background: url(Fotos/foto1.jpg); */
@@ -199,12 +246,6 @@ grid-template-areas:
 }
 
 
-.footer{
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    display: flex;
-}
 
 .sobremi{
     margin: 300px;
