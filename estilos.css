@@ -5,7 +5,6 @@
 
 
 #menu{
-    display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -38,11 +37,11 @@
 
 /* el menu esta repetido por el cambio de color */
 #menudos{
-    display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
     z-index: 999;
+    position: relative
     } 
 
     #menudos li {
@@ -65,6 +64,14 @@
     line-height: 55px;
     color: rgb(44, 44, 44);
 }  
+
+
+ #logo  {
+  position: absolute;
+  left:250px;
+  top: 20px;
+}
+
 
 
 .miestilocarrusel{
@@ -164,8 +171,9 @@ font-weight: 500;
 #myBtn {
     display: none;
     position: fixed;
-    bottom: 18px;
-    right: 18px;
+    line-height: 3vh;
+    bottom: 8vh;
+    right: 8vh;
     z-index: 99;
     font-size: 16px;
     border: none;
@@ -173,18 +181,17 @@ font-weight: 500;
     background-color: rgba(196, 129, 122, 0.863);
     color: white;
     cursor: pointer;
-    padding: 8px;
-    border-radius: 4px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    -o-border-radius: 4px;
+    padding: 1vh;
+    border-radius: 1vh;
+    -webkit-border-radius: 1vh;
+    -moz-border-radius: 1vh;
+    -ms-border-radius: 1vh;
+    -o-border-radius: 1vh;
 }
   
   #myBtn:hover {
     background-color:rgba(196, 129, 122, 0.644);
   }
-
 
 
 .galerianovios{
@@ -225,6 +232,48 @@ div a i{
     -ms-border-radius:5px;
     -o-border-radius:5px;
 }
+
+
+/* estilos para los div galeria de fotos */
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
 
 
 .contenedorFotos{
