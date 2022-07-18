@@ -9,8 +9,8 @@
     justify-content: center;
     align-items: center;
     z-index: 999;
-    } 
-    
+    }
+
 
     #menu li {
         list-style: none;
@@ -18,11 +18,11 @@
         padding: -70px;
 
         }
-        
+
         #menu ul li {
             display: inline-block;
         }
-        
+
         #menu ul li a {
     display: block;
     padding: 8px;
@@ -32,7 +32,7 @@
     font-size: 16px;
     line-height: 55px;
     color: rgb(230, 230, 230);
-}  
+}
 
 
 /* el menu esta repetido por el cambio de color */
@@ -42,7 +42,7 @@
     align-items: center;
     z-index: 999;
     position: relative
-    } 
+    }
 
     #menudos li {
         list-style: none;
@@ -63,13 +63,17 @@
     font-size: 16px;
     line-height: 55px;
     color: rgb(44, 44, 44);
-}  
+}
+#menudos ul li img {
+display:flex;
+}
 
 
- #logo  {
-  position: absolute;
-  left:250px;
-  top: 20px;
+.logo  {
+width: 90px;
+height: 47px;
+margin-bottom: -30px;
+margin-left:-200px;
 }
 
 
@@ -77,27 +81,22 @@
 .miestilocarrusel{
     max-width: 1450px;
     margin: 0 auto;
- 
+
 }
 
 .texto{
     font-family: 'Mulish', sans-serif;
-    font-weight: 500;   
+    font-weight: 500;
     font-size: 19px;
     color: rgb(44, 44, 44);
 }
 
-.textoig{
-    font-family: 'Mulish', sans-serif;
-    font-weight: 500;   
-    font-size: 19px;
-    color: rgb(44, 44, 44);
-    padding: 70px;
-}
+
+
 
 .textomenusobremi{
     font-family: 'Mulish', sans-serif;
-    font-weight: 500;   
+    font-weight: 500;
     font-size: 16px;
     color: rgb(44, 44, 44) !important;
 }
@@ -114,14 +113,14 @@
     transform: translate(-50%, -50%);
     text-align: center;
  }
- 
+
  .textHover{
     text-decoration: none !important;
     color: rgb(51, 51, 51);
  }
 
  .footer{
-    color: rgb(51, 51, 51); 
+    color: rgb(51, 51, 51);
     font-family: 'Mulish', sans-serif;
     font-weight: 200;
     justify-content: center;
@@ -131,22 +130,22 @@
 }
 
 
-.textoContacto{ 
+.textoContacto{
 margin: 230px;
 text-align: center;
 font-family: 'Mulish', sans-serif;
-    font-weight: 500;   
-    font-size: 18px; 
-    color: rgb(51, 51, 51); 
+    font-weight: 500;
+    font-size: 18px;
+    color: rgb(51, 51, 51);
 }
 
 
 h1 {
-font-weight: 500; 
+font-weight: 500;
 }
 
 h2{
-font-weight: 500; 
+font-weight: 500;
 }
 
 .contenedor{
@@ -188,7 +187,7 @@ font-weight: 500;
     -ms-border-radius: 1vh;
     -o-border-radius: 1vh;
 }
-  
+
   #myBtn:hover {
     background-color:rgba(196, 129, 122, 0.644);
   }
@@ -239,35 +238,35 @@ div a i{
     width: 100%;
     height: auto;
   }
-  
+
   div.desc {
     padding: 15px;
     text-align: center;
   }
-  
+
   * {
     box-sizing: border-box;
   }
-  
+
   .responsive {
     padding: 0 6px;
     float: left;
     width: 24.99999%;
   }
-  
+
   @media only screen and (max-width: 700px) {
     .responsive {
       width: 49.99999%;
       margin: 6px 0;
     }
   }
-  
+
   @media only screen and (max-width: 500px) {
     .responsive {
       width: 100%;
     }
   }
-  
+
   .clearfix:after {
     content: "";
     display: table;
@@ -282,9 +281,9 @@ grid-gap: 25px;
 /* margin: 0 auto; */
 padding: 25px;
 /* z-index: 4; */
-justify-content: center; 
+justify-content: center;
 /* background-size: cover; */
-grid-template-areas: 
+grid-template-areas:
 "foto1 foto2 foto3"
 "foto4 foto5 foto6"
 "footer footer footer";
@@ -336,11 +335,11 @@ grid-template-areas:
 .foto2:hover .overlay {
     opacity: 1;
   }
-  
+
 .foto3:hover .overlay {
     opacity: 1;
   }
-  
+
 .foto4:hover .overlay {
     opacity: 1;
   }
@@ -357,37 +356,37 @@ grid-template-areas:
 .contenedorFotos .foto1{
     /* background: url(Fotos/foto1.jpg); */
     position: relative;
-    background-size: cover;    
+    background-size: cover;
     grid-area: foto1;
 }
 
 .contenedorFotos .foto2{
     position: relative;
-    background-size: cover; 
+    background-size: cover;
     grid-area: foto2;
 }
 
 .contenedorFotos .foto3{
     position: relative;
-    background-size: cover; 
+    background-size: cover;
     grid-area: foto3;
 }
 
 .contenedorFotos .foto4{
     position: relative;
-    background-size: cover; 
+    background-size: cover;
     grid-area: foto4;
 }
 
 .contenedorFotos .foto5{
     position: relative;
-    background-size: cover; 
+    background-size: cover;
     grid-area: foto5;
 }
 
 .contenedorFotos .foto6{
     position: relative;
-    background-size: cover; 
+    background-size: cover;
     grid-area: foto6;
 }
 .contenedorFotos .footer{
@@ -400,6 +399,43 @@ grid-template-areas:
     margin: 300px;
 }
 
+.retrato1{
+  margin-top: 2vw;
+  margin: 5vw;
+  width:300px;
+  position: absolute; left:20%; 
+  top:20%;
+}
+
+.retrato2{
+  width:400px; 
+  position: absolute; left:45%; 
+  top:10%
+}
+
+.textomio{
+  font-family: 'Mulish', sans-serif;
+  font-weight: 500;
+  font-size: 19px;
+  color: rgb(44, 44, 44);
+  position:absolute; 
+  top:60%; 
+  left:52%; 
+  width: 35%;
+  z-index: 1;
+}
+
+.textoig{
+  font-family: 'Mulish', sans-serif;
+  font-weight: 500;
+  font-size: 19px;
+  color: rgb(44, 44, 44);
+  padding: 6vw;
+}
+
+
+
+
 .contacto{
     background: url(Fotos/contactos.jpg);
     background-size: cover;
@@ -411,20 +447,44 @@ grid-template-areas:
 
 @media (max-width: 768px ){
     .contenedorFotos{
-        grid-template-areas: 
+        grid-template-areas:
         "foto1 foto1 foto1"
         "foto2 foto2 foto2"
         "foto3 foto3 foto3"
-        "foto4 foto4 foto4" 
-        "foto5 foto5 foto5" 
+        "foto4 foto4 foto4"
+        "foto5 foto5 foto5"
         "foto6 foto6 foto6"
-        "foote footer footer";
+        "footer footer footer";
     }
-
 
     .contenedor .inicio{
         background: url(Fotos/portadamovil.jpg);
         background-repeat: no-repeat;
         /* poner la foto en el tamaño de pantalla que es para que se adapte bien y borrar lo de no-repeat */
     }
-  }
+
+    .centro{
+       display:60%;
+      }
+
+
+      /* queria poner el texto no una palabra por linea...intento fallido */
+      .textoContacto{
+        margin: 30vh;
+        text-align: center;
+        line-height: 8vh;
+        font-family: 'Mulish', sans-serif;
+            font-weight: 500;
+            font-size: 3vh;
+            color: rgb(51, 51, 51);
+        }
+
+
+        /* aqui queria el logo centrado, enciama del menu, imposible... */
+    .logo{
+      position: relative;
+      width: 90px;
+      height: 47px;
+      }
+    }
+  
