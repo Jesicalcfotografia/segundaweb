@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.menu {   
+    background-color: rgb(250, 242, 232);
+    padding: 20px;
+}
+
+.menu ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    list-style: none;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(43, 36, 36);
+    padding: 120px;
+}
+
+.menu ul li a:hover {
+    color: rgba(97, 97, 97, 0.192);
+    padding: 120px;
+}
+
+#portada{
+    background-image: url('portada.jpg');
+height: 60vh;
+background-size: cover;
+background-repeat:no-repeat;
+}
+
+/* para que afecte a todo el documento en general */
+{
+    position: relative;
+
+}
+
+
+/* no me he copiado de nada!! */
+.botonFijo{
+    background-color: rgb(250, 242, 232);
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+    width: 80px;
+    position: absolute;
+    bottom: 80px 10px;
+    right: 50px;
+}
+
+
+
+.cajas{
+grid-template-areas: 
+"foto1 foto2 foto3";
+display: grid;
+align-items: center;
+justify-content: center;
+text-align: center;
+line-height: 135px;
+}
+
+
+
+.cajas .foto1{
+    background-color: rgb(78, 218, 141);
+    grid-area: foto1;
+    width: 300px;
+    height: 150px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+}
+
+.cajas .foto2{
+    background-color: rgb(62, 189, 119);
+    grid-area: foto2;
+    width: 300px;
+    height: 150px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+}
+
+.cajas .foto3{
+    background-color: rgb(36, 119, 74);
+    grid-area: foto3;
+    width: 300px;
+    height: 150px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+}
+
+.texto{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: rgb(43, 36, 36);
+    text-align: center;
+    margin: 30px;
+}
+
+
+@media(max-width:768px) {
+    #portada{
+        width: 100vh;  
+        }
+    .cajas{
+        grid-template-areas: 
+        "foto1 foto1 foto1"
+        "foto2 foto2 foto2"
+        "foto3 foto3 foto3";
+        }
+     .menu {
+         display: none;
+        }
+    }
+ 
