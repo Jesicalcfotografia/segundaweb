@@ -120,8 +120,9 @@ margin-left:-200px;
  }
 
  .footer{
-    color: rgb(51, 51, 51);
-    font-family: 'Mulish', sans-serif;
+  font-family: 'Mulish', sans-serif;
+  font-size: 19px;
+  color: rgb(44, 44, 44);
     font-weight: 200;
     justify-content: center;
     text-align: center;
@@ -232,6 +233,16 @@ div a i{
     -o-border-radius:5px;
 }
 
+/* para poner un espacio entre foto y foto?? */
+.centro .f1,
+.centro .f2,
+.centro .f3,
+.centro .f4,
+.centro .f5,
+.centro .f6{
+
+}
+
 
 /* estilos para los div galeria de fotos */
   div.gallery img {
@@ -253,8 +264,9 @@ div a i{
     float: left;
     width: 24.99999%;
   }
+/* esto no sabemos para que es */
 
-  @media only screen and (max-width: 700px) {
+  /* @media only screen and (max-width: 700px) {
     .responsive {
       width: 49.99999%;
       margin: 6px 0;
@@ -265,7 +277,7 @@ div a i{
     .responsive {
       width: 100%;
     }
-  }
+  } */
 
   .clearfix:after {
     content: "";
@@ -392,7 +404,10 @@ grid-template-areas:
 .contenedorFotos .footer{
     grid-area: footer;
 }
-
+ .contenedorFotosSobreMi{
+  position: relative;
+   width: 100%; height: 600px;
+ }
 
 
 .sobremi{
@@ -403,13 +418,15 @@ grid-template-areas:
   margin-top: 2vw;
   margin: 5vw;
   width:300px;
-  position: absolute; left:20%; 
+  position: absolute; 
+  left:20%; 
   top:20%;
 }
 
 .retrato2{
   width:400px; 
-  position: absolute; left:45%; 
+  position: absolute; 
+  left:45%; 
   top:10%
 }
 
@@ -444,9 +461,46 @@ grid-template-areas:
 }
 
 
+@media(max-width:1100px)
+{
+  .textomio{
+    left:55%;
+  }
+}
+
+.textoig{
+  padding-top: 120px;
+}
 
 @media (max-width: 768px ){
-    .contenedorFotos{
+.contenedorFotosSobreMi{
+  display: flex;
+  width: 100%;
+  padding: 25px;
+  flex-wrap: wrap;
+  height: auto;
+
+}
+.retrato1{
+  position: static;
+  margin: 0 auto;
+  top: 5%;
+
+}
+.retrato2{
+display: none;
+}
+
+.textomio{
+margin:10px auto;
+  position: static;
+  width: 100%;
+ /* top: 80%;
+left:0;
+width: 100%; */
+}
+
+.contenedorFotos{
         grid-template-areas:
         "foto1 foto1 foto1"
         "foto2 foto2 foto2"
@@ -457,19 +511,15 @@ grid-template-areas:
         "footer footer footer";
     }
 
-    .contenedor .inicio{
+.contenedor .inicio{
         background: url(Fotos/portadamovil.jpg);
         background-repeat: no-repeat;
         /* poner la foto en el tamaño de pantalla que es para que se adapte bien y borrar lo de no-repeat */
     }
 
-    .centro{
-       display:60%;
-      }
-
 
       /* queria poner el texto no una palabra por linea...intento fallido */
-      .textoContacto{
+.textoContacto{
         margin: 30vh;
         text-align: center;
         line-height: 8vh;
@@ -481,10 +531,12 @@ grid-template-areas:
 
 
         /* aqui queria el logo centrado, enciama del menu, imposible... */
-    .logo{
+.logo{
       width: 13vw;
       height: 7vw;
       margin-left:-50px;
       }
+
     }
   
+    
