@@ -482,9 +482,9 @@ grid-template-areas:
 
         /* aqui queria el logo centrado, enciama del menu, imposible... */
     .logo{
-      position: relative;
-      width: 90px;
-      height: 47px;
+      width: 13vw;
+      height: 7vw;
+      margin-left:-50px;
       }
     }
   
